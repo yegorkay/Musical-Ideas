@@ -1,0 +1,101 @@
+body, html {
+		background: linear-gradient(#6fc415,#4286f4);
+		font-family: 'Arimo', sans-serif;
+		color: white;
+		height: 100vh;
+		width: 100%;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	flex-flow: column;
+	text-align: center;
+}
+.highlightedButton {
+	background: none;
+	cursor: pointer;
+	opacity: 0.6;
+	transform: scale(0.97);
+	transition-duration: .3s;
+}
+.active {
+	 transform: scale(1);
+	 opacity: 1;
+	 background: none;
+    color: white;
+}
+
+@media (min-width: 320px) {
+
+	.container {
+		padding-top: -30px;
+	}
+	h1 {
+		font-size: 60px;
+		line-height: 55px;
+	}
+	.text-center {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.info {
+		font-size: 20px;
+	}
+	.list-group {
+		display: block;
+		vertical-align: middle;
+	}
+	.option {
+		border-radius: 5px;
+		border: 2px solid;
+		font-size: 25px;
+		margin-bottom: 6px;
+		vertical-align: middle;
+	}
+}
+
+@media (min-width: 425px) {
+	.list-group {
+		width: 95%;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 425px) {
+   html, body {
+      background: none;
+      background-color: #4286f4;
+   }
+}
+
+@media (min-width: 768px) {
+	.list-group {
+		width: 60%;
+		margin: 0 auto;
+	}
+	.info {
+		width: 60%;
+		margin: 0 auto;
+		padding-bottom: 20px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.list-group {
+		width: 40%;
+		margin: 0 auto;
+	}
+	.info {
+		width: 40%;
+		margin: 0 auto;
+		padding-bottom: 20px;
+	}
+}
+
+@media (min-width: 1440px) {
+	.list-group {
+		width: 30%;
+		margin: 0 auto;
+	}
+}
